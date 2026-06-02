@@ -41,57 +41,6 @@ if choice == "Archer".strip().lower():
 if choice == "Test".strip().lower():
     player = Test()
 
-
-class enemy():
-    def __init__(self, name, health, damage):
-        self.name = name
-        self.health = health
-        self.damage = damage
-import random
-print("This is a dnd game\n")
-print("This is also my first project \n")
-username = input("----What is your name?----\n ")
-answer = input(f"Nice to meet you {username} are you ready to get started on your journey?")
-if answer == "Yes".strip().lower():
-    print("Let's get started")
-else:
-    print("Too bad")
-class Brawler():
-    def __init__(self):
-        self.name = username
-        self.damage = random.randint(20,25)
-        self.health = random.randint(110,120)
-        self.heal = 20
-class Mage():
-    def __init__(self):
-        self.name = username
-        self.damage = random.randint(30,35)
-        self.health = random.randint(50,60)
-        self.heal = 22
-class Archer():
-    def __init__(self):
-        self.name = username
-        self.damage = random.randint(40,45)
-        self.health = random.randint(80,100)
-        self.heal = 22
-class Test():
-    def __init__(self):
-        self.name = username
-        self.damage = random.randint(1000,1000)
-        self.health = random.randint(8000,10000)
-        self.heal = 22
-choice = input("what class do you want. ")
-if choice == "Brawler".strip().lower():
-    player = Brawler()
-if choice == "Mage".strip().lower():
-    player = Mage()
-if choice == "Archer".strip().lower():
-    player = Archer()
-if choice == "Test".strip().lower():
-    player = Test()
-
-
-
 class enemy():
     def __init__(self, name, health, damage):
         self.name = name
@@ -103,7 +52,7 @@ if enemy_enemy == 1:
 elif enemy_enemy == 2:
     current_enemy = enemy("Knight", 120, 15)
 elif enemy_enemy == 3:
-    current_enemy = enemy ("Adam", 150, 12)
+    current_enemy = enemy("Adam", 150, 12)
 
 print("you entered the castle. An enemy has appeared")
 while True:
