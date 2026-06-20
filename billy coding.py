@@ -36,7 +36,7 @@ class enemy():
         self.name = name
         self.health = health
         self.damage = damage
-enemy_enemy = random.randint(1,3)
+enemy_enemy = random.randint(1,4)
 if enemy_enemy == 1:
     current_enemy = enemy("Goblin", 80, 10)
 elif enemy_enemy == 2:
