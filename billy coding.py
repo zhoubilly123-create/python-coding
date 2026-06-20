@@ -86,7 +86,7 @@ def combat():
 print("You entered the caste")
 while True:
     decision = input("Where do you want to go next? Options: Continue, Forest, Desert ")
-    if decision.strip().lower() == "Continue":
+    if decision.strip().lower() == "continue":
         combat()
     
        
