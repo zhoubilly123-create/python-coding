@@ -7,7 +7,6 @@ if answer == "Yes".strip().lower():
     print("Let's get started")
 else:
     print("Too bad")
-level = 0
 Area = ["Forest, Dungeon, Cave"]
 inventory = [""]
 
@@ -54,6 +53,7 @@ def heal():
     print(f"you healed for {player.heal}, and your current hp is {player.health}")
 def combat():
     print(f"{current_enemy.name} has appeared")
+    level = 0
     while current_enemy.health > 0 and player.health > 0:
             enemy_action = random.randint(1,3)
             action = input("Actions: Attack, Heal, Flee \n" )
