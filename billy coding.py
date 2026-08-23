@@ -1,6 +1,6 @@
 import random
 print("This is a dnd game\n")
-print("This is also my first project \n")
+print("This is also my first projects\n")
 username = input("----What is your name?----\n ")
 answer = input(f"Nice to meet you {username} are you ready to get started on your journey?")
 if answer == "Yes".strip().lower():
